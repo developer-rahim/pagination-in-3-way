@@ -1,16 +1,59 @@
-# paginated_app
+# pagination-in-3-way
 
-A new Flutter project.
+The same paginated list implemented three different ways.
+
+## Highlights
+
+- **`flutter_pagewise`** — a page-centric package that handles the maths for you.
+- **GetX + Dio** — manual page tracking with reactive state.
+- **`pull_to_refresh`** — the familiar pull-to-load-more interaction.
+- All three follow the same `model` → `repository` → `controller` → `view` structure, so they are directly comparable.
+
+## Tech Stack
+
+| Concern | Choice |
+|---|---|
+| UI | Flutter, Material |
+| Pagination | `flutter_pagewise`, `pull_to_refresh` |
+| State management | `get` |
+| Networking | `dio`, `http` |
+
+## Project Structure
+
+```
+lib/
+- `controller`
+- `model`
+- `repository`
+- `view`
+```
 
 ## Getting Started
 
-This project is a starting point for a Flutter application.
+### Prerequisites
 
-A few resources to get you started if this is your first Flutter project:
+- Flutter `>= 3.16` (Dart `>= 3.2`)
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+### Run
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+```bash
+git clone https://github.com/developer-rahim/pagination-in-3-way.git
+cd pagination-in-3-way
+flutter pub get
+flutter run
+```
+
+### Test
+
+```bash
+flutter test
+flutter analyze
+```
+
+## Notes
+
+A useful reference when choosing a pagination approach — each implementation lives in its own branch or folder.
+
+## License
+
+Released under the MIT License.
